@@ -1,0 +1,22 @@
+AWS 2 Lab Notes
+
+Completed:
+- Created EC2 instance
+- Connected to EC2 using AWS Systems Manager Session Manager
+- Installed AWS CLI inside EC2
+- Verified identity using aws sts get-caller-identity
+- Removed SSH inbound rule port 22 from Security Group
+- Created S3 bucket: devops-syam-7421
+- Created server.txt inside EC2
+- Uploaded server.txt from EC2 to S3
+- Listed object inside S3 bucket
+- Downloaded server.txt back from S3
+
+Bucket:
+s3://devops-syam-7421/server.txt
+
+Concept:
+EC2 is temporary compute.
+S3 is persistent object storage.
+IAM Role allows EC2 to access AWS services without running aws configure.
+SSM allows server access without opening SSH port 22.
