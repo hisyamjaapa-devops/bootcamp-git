@@ -1,0 +1,27 @@
+Cloudflare2 Notes
+
+Amali 1:
+Created security group devops-sg in devops-vpc.
+Allowed inbound HTTP port 80 and HTTPS port 443.
+
+Amali 2:
+Launched EC2 origin server using Ubuntu 24.04 and t3.micro.
+Attached IAM role EC2-SSM-ROLE.
+Associated Elastic IP to EC2 instance.
+
+Amali 3:
+Installed nginx and dnsutils on EC2 using SSM Session Manager.
+Verified nginx is active and accessible from browser.
+
+Amali 4:
+Created Cloudflare DNS A record.
+web.syampccare.com points to EC2 Elastic IP.
+Proxy status was set to DNS only.
+
+Amali 5:
+Changed Cloudflare proxy status from DNS only to Proxied.
+Observed that DNS resolution changes from Elastic IP to Cloudflare IP.
+
+Amali 6:
+Published a private GitHub repository to Cloudflare Pages.
+Configured custom subdomain private.syampccare.com.
