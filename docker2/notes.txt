@@ -1,0 +1,2 @@
+IMAGE             ID             DISK USAGE   CONTENT SIZE   EXTRA
+bootcamp-app:v1   525d8ad3a069        115MB         36.4MB   U    
