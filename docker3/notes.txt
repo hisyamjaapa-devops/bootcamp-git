@@ -1,0 +1,70 @@
+Docker Part 3 - Evidence
+
+Name:
+Hisyam
+
+Repository:
+hisyamjaapa-devops/bootcamp-git
+
+Activity Summary:
+In Docker Part 3, I completed Docker image build, AWS ECR push and pull, Docker volume persistence using Redis, Docker network communication, and arena avatar activity.
+
+Amali 1 - Build Image:
+Built Docker image named app:kecil from the application repository.
+
+Amali 2 - Push Image to ECR:
+Tagged the local image and pushed it to AWS ECR.
+
+Amali 3 - Pull Image from ECR:
+Removed local image, pulled it back from ECR, and ran it as a container.
+
+Amali 4 - Docker Volume:
+Created Docker network arena.
+Ran Redis container named profile using Docker volume me.
+Stored name data inside Redis using key nama.
+
+Amali 5 - Volume Persistence:
+Removed the Redis container and recreated it.
+Confirmed that data remained when using the same volume me.
+
+Amali 6 - Docker Network:
+Ran arena-server and avatar containers.
+Connected avatar to Redis profile using container name inside Docker network arena.
+
+Amali 7 - AWS EC2 Group Challenge:
+Connected to EC2 using SSM.
+Ran Docker containers in AWS.
+Joined the arena activity using avatar container.
+
+Docker Network Used:
+arena
+
+Docker Volume Used:
+me
+
+Containers Used:
+profile
+avatar
+arena-server
+
+Key Learning:
+Docker images package applications.
+AWS ECR stores Docker images in the cloud.
+Docker volumes keep data persistent even after containers are removed.
+Docker networks allow containers to communicate using container names.
+
+=== Docker Images ===
+
+=== Docker Networks ===
+
+=== Docker Volumes ===
+
+=== Running Containers ===
+
+=== Docker Images ===
+
+=== Docker Networks ===
+
+=== Docker Volumes ===
+
+=== Running Containers ===
