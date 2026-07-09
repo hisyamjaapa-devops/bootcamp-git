@@ -1,0 +1,19 @@
+services:
+  profile:
+    image: redis
+    volumes:
+      - me:/data
+
+  avatar:
+    image: ghcr.io/infratify/arena-avatar
+    ports:
+      - "8080:8080"
+    environment:
+      NAME: Hisyam
+      COLOR: blue
+      SERVER: 13.229.210.137:3000
+    depends_on:
+      - profile
+
+volumes:
+  me:
