@@ -1,0 +1,5 @@
+.terraform/
+inventory.ini
+data.tf.bak
+*.tfstate
+*.tfstate.*
